@@ -21,6 +21,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 230px 4fr;
+  height: 100vh;
 }
 
 .sidebar {
@@ -54,6 +55,13 @@ body {
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 15px;
+  transition: 0.4s all ease;
+}
+
+.sidebar .link li:hover {
+  color: var(--primary-clr);
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 .sidebar .link svg {
@@ -172,6 +180,12 @@ user agent stylesheet
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.20);
 -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.20);
 box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.20);
+transition: 0.3s all ease;
+}
+
+.item:hover {
+  border-color: var(--secondary-clr);
+  background: var(--light-clr);
 }
 
 
@@ -225,6 +239,8 @@ ul.head-btn {
   padding: 0;
   gap: 0 30px;
   justify-content: end;
+  margin: 0;
+  align-items: center;
 }
 
 ul.head-btn a {
@@ -237,7 +253,13 @@ ul.head-btn a {
   border-radius: 100px;
   text-align: center;
   min-width: 55px;
-  align-self: flex-end;
+  transition: 0.5s all ease;
+  
+}
+
+ul.head-btn a:hover {
+  background: var(--light-clr);
+  color: var(--dark-clr);
 }
 
 
